@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="设置IP和端口"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:text="IP:"/>
+
+
+        <EditText
+            android:id="@+id/setting_Ip_et"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:hint="请输入IP地址"
+            android:layout_weight="3"
+            android:layout_marginRight="10dip"
+            android:textSize="17sp"
+            android:digits="1234567890."
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:text="端口:"/>
+
+
+        <EditText
+            android:id="@+id/setting_port_et"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:hint="请输入IP地址"
+            android:layout_weight="3"
+            android:layout_marginRight="10dip"
+            android:textSize="17sp"
+            android:inputType="number"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setting_save_bt"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:text="保存"/>
+
+
+        <Button
+            android:id="@+id/setting_cancle_bt"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dip"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="取消"/>
+    </LinearLayout>
+
+</LinearLayout>
